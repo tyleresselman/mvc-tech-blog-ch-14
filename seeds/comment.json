@@ -1,0 +1,17 @@
+[
+    {
+        "content": "Well put!",
+        "user_id": 1,
+        "post_id": 1
+    },
+    {
+        "content": "I'm hungry.",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "content": "Dad?",
+        "user_id": 3,
+        "post_id": 3
+    }
+]
