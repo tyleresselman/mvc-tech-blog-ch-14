@@ -1,17 +1,17 @@
 [
     {
         "title": "Here goes nothing.",
-        "content": "Keep it up.",
+        "contents": "Keep it up.",
         "user_id": 1
     },
     {
         "title": "You got this",
-        "content": "Don't you quit now.",
+        "contents": "Don't you quit now.",
         "user_id": 2
     },
     {
         "title": "Onward.",
-        "content": "Life is beautiful.",
+        "contents": "Life is beautiful.",
         "user_id": 3
     }
 ]
