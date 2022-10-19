@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { TimeoutError } = require('sequelize');
 const { Post } = require('../models/');
 const auth = require('../utils/auth');
 
