@@ -3,9 +3,9 @@ const { Post } = require('../../models/');
 const auth = require('../../utils/auth');
 
 router.post('/', auth, async (req, res) => {
-    const contents = req.contents;
+    const contents = req.body;
     try {
-        const newPost = await Post.create({ ...contents, user_id: req.session.user_id });
+        const newPost = await Post.create({ ...contents, userId: req.session.userId });
         res.json(newPost);
     } catch (err) {
         res.status(500).json(err);
@@ -14,7 +14,7 @@ router.post('/', auth, async (req, res) => {
 
 router.put('/:id', auth, async (req, res) => {
     try {
-        const [postEdit] = await Post.update(req.contents, {
+        const [postEdit] = await Post.update(req.body, {
             where: {
                 id: req.params.id
             }
