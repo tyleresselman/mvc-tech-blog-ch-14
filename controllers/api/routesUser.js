@@ -31,7 +31,7 @@ router.post('/login', async (req, res) => {
             res.status(400).json({ message: `Hmm, sorry. Can't seem to find either that username or that password. Give it another try?` });
             return;
         }
-        const validPass = userData.checkPassword(req.body.password)
+        const validPass = await userData.checkPassword(req.body.password)
 
         if (!validPass) {
             res.status(400).json({ message: `Hmm, sorry. Can't seem to find either that username or that password. Give it another try?` });

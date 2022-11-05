@@ -1,6 +1,6 @@
 const postId = document.querySelector('input[name="post-id"]').value
 const editFormHandler = async function(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     const postTitle = document.querySelector('input[name="post-title"]').value;
     const postBody = document.querySelector('textarea[name=post-body]').value;
