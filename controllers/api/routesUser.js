@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { response } = require('express');
+// const { response } = require('express');
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
@@ -41,7 +41,7 @@ router.post('/login', async (req, res) => {
             req.session.userId = userData.id;
             req.session.username = userData.username;
             req.session.logged_in = true;
-            res.json({ userData, message: `Successfully logged in, good on ya.` });
+            res.json({ user: userData, message: `Successfully logged in, good on ya.` });
         });
     } catch (err) {
         res.status(400).json({ message: `Hmm, sorry. Can't seem to find either that username or that password. Give it another try?`});

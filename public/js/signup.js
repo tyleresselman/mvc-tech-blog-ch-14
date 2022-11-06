@@ -14,10 +14,10 @@ const signupFormHandler = async function(event) {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert("Something went wrong.");
+        alert("Couldn't sign you up.");
       }
     }
   };
   
 document.querySelector('#signup-form').
-addEventListener('submit', signupFormHandler())
+addEventListener('submit', signupFormHandler());

@@ -1,9 +1,9 @@
-const postId = document.querySelector('input[name="post-id"]').value
+const postId = document.querySelector('input[name="post-id"]').val();
 const editFormHandler = async function(event) {
-    // event.preventDefault();
+    event.preventDefault();
 
-    const postTitle = document.querySelector('input[name="post-title"]').value;
-    const postBody = document.querySelector('textarea[name=post-body]').value;
+    const postTitle = document.querySelector('input[name="post-title"]').val().trim();
+    const postBody = document.querySelector('textarea[name=post-body]').val().trim();
 
     await fetch(`/api/post/${postId}`, {
         method: 'PUT',
@@ -13,7 +13,10 @@ const editFormHandler = async function(event) {
       document.location.replace('/dashboard')
 };
 
-const deleteHandler = async function() {
+const deleteHandler = async function(event) {
+
+  event.preventDefault();
+
     await fetch(`/api/post/${postId}`, {
         method: 'DELETE'
       });
