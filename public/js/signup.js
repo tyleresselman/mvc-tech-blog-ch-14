@@ -1,5 +1,5 @@
 const signupFormHandler = async function(event) {
-    // event.preventDefault();
+    event.preventDefault();
   
     const username = document.querySelector('#username-input-signup').value;
     const password = document.querySelector('#password-input-signup').value;
@@ -20,4 +20,4 @@ const signupFormHandler = async function(event) {
   };
   
 document.querySelector('#signup-form').
-addEventListener('submit', signupFormHandler());
+addEventListener('submit', signupFormHandler);
