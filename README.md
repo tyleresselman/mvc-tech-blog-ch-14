@@ -8,7 +8,7 @@
 
   Our challenge this module was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. We built this site completely from scratch and deployed it to Heroku. Our app was to follow the MVC paradigm in its architectural structure, use Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
   
-  I was able to nail down the structure mostly but still have a ways to go to acheive full functionality. The scale of the labor was the main obstacle for me. I'm still working on codifying my workflow. It's something!
+  I achieved more functionality on the second pass, though it still needs more work. I'm getting there!
 
   [LIVE LINK through Heroku where you will be able to use my app very soon.](https://dry-tundra-34697.herokuapp.com/)
 
