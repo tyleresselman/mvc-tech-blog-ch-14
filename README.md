@@ -10,7 +10,9 @@
   
   I achieved more functionality on the second pass, though it still needs more work. I'm getting there!
 
-  [LIVE LINK through Heroku where you will be able to use my app very soon.](https://dry-tundra-34697.herokuapp.com/)
+  [LIVE LINK through Heroku.](https://dry-tundra-34697.herokuapp.com/)
+
+  ![Screenshot of deployed app](./assets/img/Screenshot%202022-11-08%20124248.png)
 
   ## Table of Contents:
   - [Description](#description)
